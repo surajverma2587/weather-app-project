@@ -1,0 +1,51 @@
+:root {
+  --charcoal: #264653ff;
+  --persian-green: #2a9d8fff;
+  --saffron: #e9c46aff;
+  --sandy-brown: #f4a261ff;
+  --burnt-sienna: #e76f51ff;
+  --light: #ffffff;
+}
+
+body {
+  /* background-color: var(--charcoal);
+  color: var(--light); */
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.aside-container {
+  flex: 1;
+}
+
+.app-container {
+  flex: 4;
+}
+
+.jumbotron {
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  background-color: var(--burnt-sienna);
+  text-align: center;
+  color: var(--light);
+  letter-spacing: 4px;
+}
+
+.forecast-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 576px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  .forecast-container {
+    flex-direction: column;
+  }
+}
